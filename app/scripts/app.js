@@ -36,13 +36,11 @@ var KukerLeaderboard = React.createClass({
   },
   componentDidMount: function() {
     var self = this;
-
     this.setInterval(function() {
       $.ajax({
         dataType: "json",
         url: "/json/mock.json",
         success: function(data) {
-          console.log(data);
           self.setState(data);
         },
         error: function(error) {
@@ -66,7 +64,7 @@ var KukerLeaderboard = React.createClass({
             </thead>
             <tbody>
               <tr className="warning">
-                <td><img className="podium" src="/images/podium_white.png"/></td>
+                <td><img className="podium" src="/images/icon.png"/></td>
                 <td>{this.state.teams[0].teamName}</td>
                 <td>{this.state.teams[0].points}</td>
               </tr>

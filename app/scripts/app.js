@@ -65,60 +65,59 @@ var KukerLeaderboard = React.createClass({
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><img className="podium" src="/images/podium.png"/></td>
+              <tr className="warning">
+                <td><img className="podium" src="/images/podium_white.png"/></td>
                 <td>{this.state.teams[0].teamName}</td>
                 <td>{this.state.teams[0].points}</td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[1].teamName}</td>
+                <td>{this.state.teams[1].points}</td>
               </tr>
-              <tr className="info">
+              <tr>
                 <td>3</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[2].teamName}</td>
+                <td>{this.state.teams[2].points}</td>
               </tr>
-              <tr className="success">
+              <tr>
                 <td>4</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[3].teamName}</td>
+                <td>{this.state.teams[3].points}</td>
               </tr>
-              <tr className="danger">
+              <tr>
                 <td>5</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[4].teamName}</td>
+                <td>{this.state.teams[4].points}</td>
               </tr>
-              <tr className="warning">
+              <tr>
                 <td>6</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[5].teamName}</td>
+                <td>{this.state.teams[5].points}</td>
               </tr>
-              <tr className="active">
+              <tr>
                 <td>7</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[6].teamName}</td>
+                <td>{this.state.teams[6].points}</td>
               </tr>
-              <tr className="active">
+              <tr>
                 <td>8</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[7].teamName}</td>
+                <td>{this.state.teams[7].points}</td>
               </tr>
-              <tr className="active">
+              <tr>
                 <td>9</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[8].teamName}</td>
+                <td>{this.state.teams[8].points}</td>
               </tr>
-              <tr className="active">
+              <tr>
                 <td>10</td>
-                <td>{this.state.teams[0].teamName}</td>
-                <td>{this.state.teams[0].points}</td>
+                <td>{this.state.teams[9].teamName}</td>
+                <td>{this.state.teams[9].points}</td>
               </tr>
             </tbody>
           </table>
         </div>
-    console.log(this.state);
     return (
       <div>
        {elements}

@@ -25,11 +25,9 @@ var KukerLeaderboard = React.createClass({
       dataType: "json",
       url: "./json/mock.json",
       success: function(data) {
-        console.log(data);
         self.setState(data);
       },
       error: function(error) {
-        debugger;
         console.error(error);     
       }  
     });
@@ -44,7 +42,6 @@ var KukerLeaderboard = React.createClass({
           self.setState(data);
         },
         error: function(error) {
-          debugger;
           console.error(error);     
         }  
       })

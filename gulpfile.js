@@ -9,6 +9,12 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var path = require('path');
 var reactify = require('reactify');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(deploy());
+});
 
 gulp.task('styles', function () {
   gulp.src('app/styles/main.less')

@@ -23,7 +23,7 @@ var KukerLeaderboard = React.createClass({
     var self = this;
     $.ajax({
       dataType: "json",
-      url: "./json/mock.json",
+      url: "../json/mock.json",
       success: function(data) {
         self.setState(data);
       },
@@ -37,7 +37,7 @@ var KukerLeaderboard = React.createClass({
     this.setInterval(function() {
       $.ajax({
         dataType: "json",
-        url: "./json/mock.json",
+        url: "../json/mock.json",
         success: function(data) {
           self.setState(data);
         },

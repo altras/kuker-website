@@ -68,7 +68,7 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
             ), 
             React.createElement("tbody", null, 
               React.createElement("tr", {className: "warning"}, 
-                React.createElement("td", null, React.createElement("img", {className: "podium", src: "/images/cup.png"})), 
+                React.createElement("td", null, React.createElement("img", {className: "podium", src: "../images/cup.png"})), 
                 React.createElement("td", null, this.state.Teams[0].team), 
                 React.createElement("td", null, this.state.Teams[0].score)
               ), 

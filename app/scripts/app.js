@@ -50,12 +50,11 @@ var KukerLeaderboard = React.createClass({
   render: function() {
     var elements = !this.state ? null : 
         <div className="table-container">
-          <h1> Kuker </h1>
+          <img className="header" src="../images/header.jpg"/>
+          A collaborative 2D platformer for 3-5 players trying to help a bulgarian Kuker fullfil his mission
           <div className="description">
-            A collaborative 2D platformer for 3-5 players trying to help a bulgarian Kuker fullfil his mission
-            <a href=""><span class="glyphicon glyphicon-align-left"></span> GitHub</a>
-            <a href=""><span class="glyphicon glyphicon-heart"></span> Facebook</a>
-          <div>
+            <p><a href="https://github.com/altras/kuker-website"><span class="glyphicon glyphicon-align-left"></span> GitHub</a></p>
+            <p><a href="https://www.facebook.com/KukerTheGame"><span class="glyphicon glyphicon-heart"></span> Facebook</a></p>
           </div>
           <h3> Global Leaderboard </h3>
           <table className="table table-striped table-hover ">

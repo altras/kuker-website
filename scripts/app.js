@@ -24,7 +24,7 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
     var self = this;
     $.ajax({
       dataType: "json",
-      url: "./json/mock.json",
+      url: "http://128.199.48.184:5000/kukeri/teams",
       success: function(data) {
         self.setState(data);
       },
@@ -38,7 +38,7 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
     this.setInterval(function() {
       $.ajax({
         dataType: "json",
-        url: "./json/mock.json",
+        url: "http://128.199.48.184:5000/kukeri/teams",
         success: function(data) {
           self.setState(data);
         },
@@ -63,53 +63,53 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
             React.createElement("tbody", null, 
               React.createElement("tr", {className: "warning"}, 
                 React.createElement("td", null, React.createElement("img", {className: "podium", src: "/images/icon.png"})), 
-                React.createElement("td", null, this.state.teams[0].teamName), 
-                React.createElement("td", null, this.state.teams[0].points)
+                React.createElement("td", null, this.state.Teams[0].team), 
+                React.createElement("td", null, this.state.Teams[0].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "2"), 
-                React.createElement("td", null, this.state.teams[1].teamName), 
-                React.createElement("td", null, this.state.teams[1].points)
+                React.createElement("td", null, this.state.Teams[1].team), 
+                React.createElement("td", null, this.state.Teams[1].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "3"), 
-                React.createElement("td", null, this.state.teams[2].teamName), 
-                React.createElement("td", null, this.state.teams[2].points)
+                React.createElement("td", null, this.state.Teams[2].team), 
+                React.createElement("td", null, this.state.Teams[2].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "4"), 
-                React.createElement("td", null, this.state.teams[3].teamName), 
-                React.createElement("td", null, this.state.teams[3].points)
+                React.createElement("td", null, this.state.Teams[3].team), 
+                React.createElement("td", null, this.state.Teams[3].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "5"), 
-                React.createElement("td", null, this.state.teams[4].teamName), 
-                React.createElement("td", null, this.state.teams[4].points)
+                React.createElement("td", null, this.state.Teams[4].team), 
+                React.createElement("td", null, this.state.Teams[4].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "6"), 
-                React.createElement("td", null, this.state.teams[5].teamName), 
-                React.createElement("td", null, this.state.teams[5].points)
+                React.createElement("td", null, this.state.Teams[5].team), 
+                React.createElement("td", null, this.state.Teams[5].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "7"), 
-                React.createElement("td", null, this.state.teams[6].teamName), 
-                React.createElement("td", null, this.state.teams[6].points)
+                React.createElement("td", null, this.state.Teams[6].team), 
+                React.createElement("td", null, this.state.Teams[6].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "8"), 
-                React.createElement("td", null, this.state.teams[7].teamName), 
-                React.createElement("td", null, this.state.teams[7].points)
+                React.createElement("td", null, this.state.Teams[7].team), 
+                React.createElement("td", null, this.state.Teams[7].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "9"), 
-                React.createElement("td", null, this.state.teams[8].teamName), 
-                React.createElement("td", null, this.state.teams[8].points)
+                React.createElement("td", null, this.state.Teams[8].team), 
+                React.createElement("td", null, this.state.Teams[8].score)
               ), 
               React.createElement("tr", null, 
                 React.createElement("td", null, "10"), 
-                React.createElement("td", null, this.state.teams[9].teamName), 
-                React.createElement("td", null, this.state.teams[9].points)
+                React.createElement("td", null, this.state.Teams[9].team), 
+                React.createElement("td", null, this.state.Teams[9].score)
               )
             )
           )

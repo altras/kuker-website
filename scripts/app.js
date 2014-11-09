@@ -51,7 +51,13 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
   render: function() {
     var elements = !this.state ? null : 
         React.createElement("div", {className: "table-container"}, 
-          React.createElement("h1", null, " Kuker Leaderboard "), 
+          React.createElement("img", {className: "header", src: "../images/header.jpg"}), 
+          "A collaborative 2D platformer for 3-5 players trying to help a bulgarian Kuker fullfil his mission", 
+          React.createElement("div", {className: "description"}, 
+            React.createElement("p", null, React.createElement("a", {href: "https://github.com/altras/kuker-website"}, React.createElement("span", {class: "glyphicon glyphicon-align-left"}), " GitHub")), 
+            React.createElement("p", null, React.createElement("a", {href: "https://www.facebook.com/KukerTheGame"}, React.createElement("span", {class: "glyphicon glyphicon-heart"}), " Facebook"))
+          ), 
+          React.createElement("h3", null, " Global Leaderboard "), 
           React.createElement("table", {className: "table table-striped table-hover "}, 
             React.createElement("thead", null, 
               React.createElement("tr", null, 
@@ -62,7 +68,7 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
             ), 
             React.createElement("tbody", null, 
               React.createElement("tr", {className: "warning"}, 
-                React.createElement("td", null, React.createElement("img", {className: "podium", src: "/images/icon.png"})), 
+                React.createElement("td", null, React.createElement("img", {className: "podium", src: "/images/cup.png"})), 
                 React.createElement("td", null, this.state.Teams[0].team), 
                 React.createElement("td", null, this.state.Teams[0].score)
               ), 

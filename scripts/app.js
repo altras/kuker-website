@@ -50,8 +50,7 @@ var KukerLeaderboard = React.createClass({displayName: 'KukerLeaderboard',
   },
   render: function() {
     var elements = !this.state ? null : 
-        React.createElement("div", {className: "table-container"}, 
-          React.createElement("img", {className: "header", src: "../images/header.jpg"}), 
+        React.createElement("div", {className: "table-container"},  
           "A collaborative 2D platformer for 3-5 players trying to help a bulgarian Kuker fullfil his mission", 
           React.createElement("div", {className: "description"}, 
             React.createElement("p", null, React.createElement("a", {href: "https://github.com/altras/kuker-website"}, React.createElement("span", {class: "glyphicon glyphicon-align-left"}), " GitHub")), 
